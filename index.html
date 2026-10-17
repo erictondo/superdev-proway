@@ -1,71 +1,80 @@
-<!DOCtype html>
+<!DOCTYPE html>
 <html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Estação Atlas — Viagens</title>
+    <title>Pixel & Play</title>
 </head>
 
 <body>
+
     <header>
-        <h1>Estação Atlas</h1>
-        <h2>A próxima aventura começa aqui!</h2>
+        <h1>Pixel & Play</h1>
+        <h2>Festival de Games e Cultura Pop</h2>
 
         <nav>
-            <a href="index.html">Início |</a>
-            <a href="#destinos">Destinos |</a>
-            <a href="./paginas/inscricao.html" target="_blank">Inscreva-se</a>
+            <a href="../index.html">Início |</a>
+            <a href="./paginas/inscricao.html" target="_blank">Inscrição |</a>
+            <a href="./paginas/programacao.html" target="_blank">Programação</a>
         </nav>
     </header>
-    <main>
-        <div>
-            <section id="destinos">
-                <h3>Destinos em destaque : </h3>
-                <form>
-                    <h4>Escolha sua próxima aventura!</h4>
-                    <label for="trilha">Trilha na Serra</label>
-                    <input type="radio" name="trilha" id="trilha">
-                    <br>
-                    <label for="praia">Final de semana na praia</label>
-                    <input type="radio" name="praia" id="praia">
-                    <br>
-                    <label for="montanhas">Acampamento nas montanhas</label>
-                    <input type="radio" name="montanhas" id="montanhas">
-                </form>
 
-                <img src="images/destino.jpg">
-            </section>
+    <main id="conteudo">
+        <section id="sobre">
+            <h2>Um fim de semana para quem gosta de jogar</h2>
+            <p>O <strong>Pixel & Play</strong> reúne jogos retro, torneios, cosplay e oficinas criatovas em um só lugar.
+            </p>
+            <p>
+                O evento acontece nos dias
+                <time datetime="2026-11-21">21</time> e
+                <span>22 de Novembro de 2026</span>
+            </p>
 
-            <section id="pacotes">
-                <h2>Pacotes disponíveis</h2>
-                <caption>Confira os pacotes disponíveis</caption>
-                <thead>
-                    <br>
+            <img src="./midias/cartaz-festival.png"
+                alt="Cartaz ilustrado do Pixel & Play, com formas de jogos retro e datas do festival">
+        </section>
 
-                    <table border="2">
-                        <tr>
-                            <td>Destino</td>
-                            <td>Duração</td>
-                        </tr>
-                        <tr>
-                            <td>Serra</td>
-                            <td>3 dias</td>
-                        </tr>
-                        <tr>
-                            <td>Praia</td>
-                            <td>2 dias</td>
-                        </tr>
-                    </table>
-                </thead>
-            </section>
-        </div>
+        <section id="experiencias">
+            <h2>O que você vai encontrar</h2>
 
-        <footer>
-            <p>Estação Atlas — 2026</p>
-            <a href="#index.html">Voltar ao Topo</a>
-        </footer>
+            <ul>
+                <li>Campeonato de josos</li>
+                <li>Área de consoles clássicos</li>
+                <li>Desfile de Cosplays</li>
+                <li>Oficinas de desenho e pixel art</li>
+            </ul>
+
+            <h3>Como participar</h3>
+
+            <ol>
+                <li>Confira a <a href="./paginas/programacao.html#horarios">programação</a>.</li>
+                <li>Escolha as atividades de que mais gosta</li>
+                <li>Preencha o <a href="./paginas/inscricao.html">formulário de inscrição</a>.</li>
+            </ol>
+        </section>
+
+        <section id="midias">
+            <h2>Um gostinho do festival</h2>
+            <h3>Teaser em vídeo</h3>
+
+            <video controls src="./midias/teaser-pixel-play.mp4" width="640" poster="./midias/cartaz-festival.png">
+                <track src="./midias/teaser.vtt" kind="captions" srclang="pt-br" label="Português" default>
+                Seu navegador não suporta vídeo e áudio em HTML
+            </video>
+
+            <h3>Vinheta em áudio</h3>
+            <audio controls src="./midias/vinheta-8bits.mp3">
+
+            </audio>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Pixel & Play - Projeto para a aula de HTML 5</p>
+        <a href="#conteudo">Voltar ao conteúdo principal</a>
+    </footer>
 </body>
-</main>
 
 </html>
