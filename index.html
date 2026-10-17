@@ -1,56 +1,71 @@
-<!DOCTYPE html>
+<!DOCtype html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SuperDEV - Início</title>
+    <title>Estação Atlas — Viagens</title>
 </head>
+
 <body>
     <header>
-        <h1>
-            SuperDEV
-        </h1>
+        <h1>Estação Atlas</h1>
+        <h2>A próxima aventura começa aqui!</h2>
 
         <nav>
-            <a href="./index.html">Início</a>
-            <a href="../Aula 01/index.html">Aula 01</a>
+            <a href="index.html">Início |</a>
+            <a href="#destinos">Destinos |</a>
+            <a href="./paginas/inscricao.html" target="_blank">Inscreva-se</a>
         </nav>
-
     </header>
-    
     <main>
-        <section id="apresentacao">
-            <h2>Bem-vindo</h2>
-        </section>
+        <div>
+            <section id="destinos">
+                <h3>Destinos em destaque : </h3>
+                <form>
+                    <h4>Escolha sua próxima aventura!</h4>
+                    <label for="trilha">Trilha na Serra</label>
+                    <input type="radio" name="trilha" id="trilha">
+                    <br>
+                    <label for="praia">Final de semana na praia</label>
+                    <input type="radio" name="praia" id="praia">
+                    <br>
+                    <label for="montanhas">Acampamento nas montanhas</label>
+                    <input type="radio" name="montanhas" id="montanhas">
+                </form>
 
-        <section id="trilhas">
-            <h2>O que você pode aprender</h2>
+                <img src="images/destino.jpg">
+            </section>
 
-            <div>
-                <h3>HTML 5</h3>
-                <p>Organização e significado de conteúdo das páginas</p>
-            </div>
+            <section id="pacotes">
+                <h2>Pacotes disponíveis</h2>
+                <caption>Confira os pacotes disponíveis</caption>
+                <thead>
+                    <br>
 
-            <div>
-                <h3>CSS</h3>
-                <p>Organização visual, espaçamentos e layouts responsivos</p>
-            </div>
-        </section>
+                    <table border="2">
+                        <tr>
+                            <td>Destino</td>
+                            <td>Duração</td>
+                        </tr>
+                        <tr>
+                            <td>Serra</td>
+                            <td>3 dias</td>
+                        </tr>
+                        <tr>
+                            <td>Praia</td>
+                            <td>2 dias</td>
+                        </tr>
+                    </table>
+                </thead>
+            </section>
+        </div>
 
-        <section id="inscreva-se">
-            <h2>Interessou?</h2>
-
-            <p>
-                Experimente nosso formulário de inscrição <a href="./inscricao.html" target="blank">neste link</a>
-            </p>
-        </section>
-
-
-    </main>
-
-    <footer>
-
-
-    </footer>
+        <footer>
+            <p>Estação Atlas — 2026</p>
+            <a href="#index.html">Voltar ao Topo</a>
+        </footer>
 </body>
+</main>
+
 </html>
