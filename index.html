@@ -1,69 +1,56 @@
-<!--Doctype , html, head é a hierarquia-->
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
-    <title> Minha primeira página HTML</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SuperDEV - Início</title>
 </head>
-
 <body>
+    <header>
+        <h1>
+            SuperDEV
+        </h1>
 
-    <h1>Curso SuperDev</h1>
+        <nav>
+            <a href="./index.html">Início</a>
+            <a href="../Aula 01/index.html">Aula 01</a>
+        </nav>
 
-    <h2>Front-End</h2>
-
-
-    <h3>HTML</h3>
-    <p>É a estrutura da página.</p>
-
-
-    <h3>CSS</h3>
-    <p>É a "decoração" da página</p>
-
-    <h3>JavaScript e Lógica</h3>
-    <p>É quem liga a luz da casa.</p>
-
-    <h2>Back-End</h2>
-
-    <h3>Python</h3>
-    <p>É responsável por transformar a entrada do usuário em algo que faz sentido para o negócio/business</p>
-
-    <p><strong>Rua XV de Novembro, 123 </strong><br>
-       <em>Blumenau/SC</em>
-    </p>
+    </header>
     
-    <p>
-    <blockquote>
-        Block quote utilizado para menção/referência
-    </blockquote>
-    </p>
-    <p>
-        <cite>
-            cite Utilizado para citar o autor da referência
-        </cite>
-    </p>
-        <!--ul é unordered list, lista não ordenada-->
-        <!--li é list item-->
-        <!--ol é ordered lista, lista ordenada-->
-        <!--<ol>
-               <li></li>
-        </ol>
-            Para criar lista ordenada dentro de uma lista-->
-<!--a=ancôra-->
-<a
-href="perfil.html"
-target="_blank"
->Veja meu Perfil</a>
-<br>
-<!--target="_blank" para abrir uma nova aba-->
-<a 
-href="https://google.com"
-target="_blank"
->Acesse o Google</a>
+    <main>
+        <section id="apresentacao">
+            <h2>Bem-vindo</h2>
+        </section>
+
+        <section id="trilhas">
+            <h2>O que você pode aprender</h2>
+
+            <div>
+                <h3>HTML 5</h3>
+                <p>Organização e significado de conteúdo das páginas</p>
+            </div>
+
+            <div>
+                <h3>CSS</h3>
+                <p>Organização visual, espaçamentos e layouts responsivos</p>
+            </div>
+        </section>
+
+        <section id="inscreva-se">
+            <h2>Interessou?</h2>
+
+            <p>
+                Experimente nosso formulário de inscrição <a href="./inscricao.html" target="blank">neste link</a>
+            </p>
+        </section>
 
 
+    </main>
 
+    <footer>
+
+
+    </footer>
 </body>
-
 </html>

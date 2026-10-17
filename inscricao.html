@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>
+            SuperDEV
+        </h1>
+
+        <nav>
+            <a href="./index.html">Início</a>
+        </nav>
+    </header>
+
+    <main>
+        <form>
+            <p>
+            <label for="nome">Nome:</label>
+            <br>
+            <input type="text" name="nome" id="nome" minlength="3" maxlength="35" required>
+            </p>
+
+
+            <p>
+            <label for="email">Email:</label>
+            <br>
+            <input type="email" name="email" id="email" placeholder="exemplo@exemplo.com" required>
+            </p>
+
+            <p>
+            <label for="telefone">Telefone:</label>
+            <br>
+            <input type="tel" name="telefone" id="telefone" placeholder="(47)99999-9999" required>
+            </p>
+
+            <p>
+                <label for="data-nascimento">Data de Nascimento:</label>
+                <br>
+                <input type="date" name="data-nascimento" id="data-nascimento">
+            </p>
+
+            <p>
+                <label for="idade">Idade</label>
+                <input type="number" id="idade" name="idade" min="1" max="120">
+            </p>
+
+            <p>
+                <h3>Modalidade de preferência</h3>
+                <label for="presencial">Presencial</label>
+                <input type="radio" name="presencial" id="presencial">
+
+                <label for="online">Online</label>
+                <input type="radio" name="online" id="online">
+
+            </p>
+
+            <p>
+                <label for="curso">Curso desejado</label>
+                <select id="curso" name="curso">
+                    <option>HTML</option>
+                    <option>CSS</option>
+                    <option>JavaScript</option>
+                </select>
+            </p>
+
+
+            <p>
+                <h2>Assunto de interesse (pode escolher mais de um)</h2>
+
+                <label>Banco de Dados</label>
+                <input type="checkbox" value="Banco de Dados">
+
+                <label>Machine Learning</label>
+                <input type="checkbox" value="Machine Learning">
+
+                <label>GitHub</label>
+                <input type="checkbox" value="GitHub">
+            </p>
+
+            <p>
+                <textarea placeholder="Observação..." maxlenght="250"></textarea>
+            </p>
+
+            <button>
+                Enviar
+            </button>
+        </form>
+    </main>
+    
+</body>
+</html>

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PetAmigo</title>
+</head>
+
+<body>
+    <header>
+        <h1>Seja bem-vindo(a) </h1>
+    </header>
+
+    <main>
+        <section id="início">
+            <h2>Como funciona</h2>
+            Preencha o formulário abaixo:
+        </section>
+
+        <section id="responsavel">
+            <h3>Dados do responsável:</h3>
+            <form>
+                <p>
+                    <label for="nome">Nome:</label>
+                    <br>
+                    <input type="text" name="nome" id="nome" minlength="3" maxlength="35" required>
+                </p>
+
+                <p>
+                    <label for="email">Email:</label>
+                    <br>
+                    <input type="email" name="email" id="email" placeholder="exemplo@exemplo.com" required>
+                </p>
+
+                <p>
+                    <label for="telefone">Telefone:</label>
+                    <br>
+                    <input type="tel" name="telefone" id="telefone" placeholder="(47)99999-9999" required>
+                </p>
+        </section>
+
+        <section id="pet">
+            <h3>Dados do seu pet:</h3>
+            <form>
+                <p>
+                    <label for="nome"><strong>Nome do seu Pet:</strong></label>
+                    <br>
+                    <input type="text" name="nome" id="nome" minlength="2" maxlength="35" required>
+                </p>
+
+                <p>
+                    <label for="especie"><strong>Espécie:</strong></label>
+                    <select id="especie" name="especie">
+                        <option>Cachorro</option>
+                        <option>Gato</option>
+                        <option>Outro</option>
+                    </select>
+                </p>
+
+                <p>
+                <h3>Porte:</h3>
+                <label for="pequeno">Pequeno</label>
+                <input type="radio" name="pequeno" id="pequeno">
+
+                <label for="medio">Médio</label>
+                <input type="radio" name="medio" id="medio">
+
+                <label for="grande">Grande</label>
+                <input type="radio" name="grande" id="grande">
+                </p>
+        </section>
+
+        <h3>Serviços desejados:</h3>
+        <p>
+            <label>Banho</label>
+            <input type="checkbox" value="Banho">
+
+            <label>Tosa</label>
+            <input type="checkbox" value="Tosa">
+
+            <label>Corte de Unhas</label>
+            <input type="checkbox" value="CortedeUnhas">
+
+            <label>Hidratação</label>
+            <input type="checkbox" value="Hidratacao">
+
+        </p>
+
+
+        <h3>Data e Horário:</h3>
+        <p>
+            <label for="data-agendamento">Data:</label>
+            <br>
+            <input type="date" name="data-agendamento" id="data-agendamento">
+        </p>
+        <p>
+            <label for="horario">Horário:</label>
+            <br>
+            <input type="time" name="horario" id="horario">
+
+        </p>
+
+        <h3>Observações úteis sobre você e/ou seu pet:</h3>
+        <p>
+            <textarea placeholder="Observação..." maxlenght="250"></textarea>
+        </p>
+
+        <p>
+                <h4>Confirma que as informações estão corretas ?</h4>
+                <label for="sim">Sim</label>
+                <input type="radio" name="presencial" id="presencial" required>
+        </p>
+
+        <button>
+            Enviar
+        </button>
+
+        <br>
+        <a href="#início">Voltar ao Início </a>
+
+    </main>
+</body>
+
+</html>
